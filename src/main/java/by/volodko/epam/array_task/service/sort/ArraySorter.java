@@ -8,6 +8,8 @@ public interface ArraySorter {
     ArrayDemo insertionSort (ArrayDemo arr);
 
     ArrayDemo easySort(ArrayDemo arr);
+    ArrayDemo sortByStream(ArrayDemo arr);
+
 
 
 
