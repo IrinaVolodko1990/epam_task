@@ -4,17 +4,17 @@ import java.util.Arrays;
 import java.util.StringJoiner;
 
 public class ArrayDemo {
-    private double [] array;
+    private double[] array;
 
 
-    public ArrayDemo(double [] array) {
+    public ArrayDemo(double[] array) {
         this.array = array;
     }
 
     public ArrayDemo() {
     }
 
-    public double [] getArray() {
+    public double[] getArray() {
         return array.clone();
     }
 

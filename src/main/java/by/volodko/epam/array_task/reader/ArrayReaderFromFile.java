@@ -4,5 +4,5 @@ import by.volodko.epam.array_task.exception.CustomException;
 
 
 public interface ArrayReaderFromFile {
-    double[] readFromFile (String path) throws CustomException;
+    double[] readFromFile(String path) throws CustomException;
 }

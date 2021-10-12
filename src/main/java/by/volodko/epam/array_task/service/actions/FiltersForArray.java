@@ -16,14 +16,14 @@ public interface FiltersForArray {
 
     int countPositivElements(ArrayDemo arr);
 
-    int countNegativElements (ArrayDemo arr);
+    int countNegativElements(ArrayDemo arr);
 
-    ArrayDemo changeArrayValues (ArrayDemo arr, int position, double newValue);
+    ArrayDemo changeArrayValues(ArrayDemo arr, int position, double newValue);
 
 
     double minValueStream(ArrayDemo arr);
 
-    double maxValueStream (ArrayDemo arr);
+    double maxValueStream(ArrayDemo arr);
 
     double averageValueStream(ArrayDemo arr);
 
@@ -31,8 +31,8 @@ public interface FiltersForArray {
 
     long countPositivElementsStream(ArrayDemo arr);
 
-    long countNegativElementsStream (ArrayDemo arr);
+    long countNegativElementsStream(ArrayDemo arr);
 
-    ArrayDemo changeArrayValuesStream (ArrayDemo arr, int pow);
+    ArrayDemo changeArrayValuesStream(ArrayDemo arr, int pow);
 
 }

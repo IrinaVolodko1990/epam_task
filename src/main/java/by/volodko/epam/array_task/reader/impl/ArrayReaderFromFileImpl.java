@@ -8,9 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.*;
-import java.util.Arrays;
-import java.util.Random;
-import java.util.stream.DoubleStream;
+
 
 
 public class ArrayReaderFromFileImpl implements ArrayReaderFromFile {
@@ -30,12 +28,12 @@ public class ArrayReaderFromFileImpl implements ArrayReaderFromFile {
 
 
         } catch (FileNotFoundException e) {
-            logger.log(Level.ERROR,"Oops, file " + pathToFile + " not found", e);
-           throw new CustomException("File " + pathToFile + " not found", e);
+            logger.log(Level.ERROR, "File " + pathToFile + " not found", e);
+            throw new CustomException("File " + pathToFile + " not found", e);
 
         } catch (IOException e) {
-            logger.log(Level.ERROR,"IO exception: ", e);
-          throw new CustomException("IO exception: " + e);
+            logger.log(Level.ERROR, "IO exception: ", e);
+            throw new CustomException("IO exception: " + e);
         }
 
         return doubleArray;

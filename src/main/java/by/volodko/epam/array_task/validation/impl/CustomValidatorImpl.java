@@ -9,9 +9,9 @@ public class CustomValidatorImpl implements CustomValidator {
 
 
     @Override
-public boolean isValid(String parametr) {
+public boolean isValid(String contentFromFile) {
                 Pattern pattern = Pattern.compile(STRING_TO_DOUBLE_REGEXP);
-                Matcher matcher = pattern.matcher(parametr);
+                Matcher matcher = pattern.matcher(contentFromFile);
                 return matcher.matches();
             }
         }
